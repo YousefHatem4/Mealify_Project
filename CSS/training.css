@@ -1,0 +1,52 @@
+/* direction of the website */
+html {
+    direction: ltr;
+}
+
+/* parent */
+.container {
+    display: flex;
+    /* default 
+    left to right depends on ltr */
+    flex-direction: row;
+    /* the reverse : from right to left */
+    flex-direction: row-reverse;
+    /* from top to the bottom */
+    flex-direction: column;
+    /* from the bottom to the top */
+    flex-direction: column-reverse; 
+    /* (default) all flex items will be on one line */
+    flex-wrap: nowrap;
+    /* flex items will wrap onto multiple lines, from top to bottom. */
+    flex-wrap: wrap;
+    /* write the two flex item (direction | wrap) */
+    flex-flow: column wrap;
+    /* jastify content (x-axis) | start*/
+        justify-content: flex-start;
+        /* end at the x axis */
+        justify-content: flex-end;
+        /* at the center */
+        justify-content: center;
+        /* space-between: first item is on the start line, last item on the end line */
+        justify-content: space-between;
+        /* space around: all items spaces equal to each other */
+        justify-content: space-around;
+        /* items are distributed so that the spacing between any two items (and the space to the edges) is equal. */
+        justify-content: space-evenly;
+            /* align center: (Y-axis) | start: items are placed at the start of the cross axis. The difference between these is subtle,
+            and is about respecting the flex-direction rules or the writing-mode rules. */
+            align-items: flex-start;
+            align-items: start;
+            align-items: self-start;
+            /* items are placed at the end of the cross axis. The difference again is subtle and is about respecting flex-direction rules vs. writing-mode rules. */
+            align-items: flex-end;
+            align-items: end;
+            align-items: self-end;
+            /* stretch: (default) make the height auto and fill the parent*/
+            align-items: stretch;
+            /* baseline:items are aligned such as their baselines align */
+            align-items: baseline;
+            /* (Y-axis -> cross access)بتتجكم في توزيع العناصر علي  */
+            align-self: ;
+
+}
